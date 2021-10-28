@@ -4,21 +4,20 @@ Frontend Mentor - Order summary card solution
 This is a solution to the Order summary card challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 **Table of contents**
-- Overview
-The challenge
-Screenshot
-Links
-My process
-Built with
-What I learned
-Continued development
-Useful resources
-Author
-Acknowledgments
+- Overview:
+The challenge:
+Links:
+My process:
+Built with:
+What I learned:
+Continued development:
+Useful resources:
+Author:
+
 
 
 **Overview**
-The challenge
+The challenge:
 The challenge was to built an Oder Summary Card to look as close as possible to the design provided by Forntend Mentor. 
 
 
@@ -28,10 +27,10 @@ Live Site URL: Add live site URL here
 
 **My process**
 Built with:
+•	Semantic HTML5 markup
+•	CSS custom properties
+•	Mobile-first workflow
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Mobile-first workflow
 
 **What I learned**
 I learned how to align list items side-to-side using "Display: inline-block; property".

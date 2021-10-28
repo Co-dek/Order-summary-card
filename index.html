@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  
+  /* General / reoccurring Styling */
+  
+  body {
+    margin:0 ;
+    padding: 0;
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    background-image: url('imgages/pattern-background-mobile.svg');
+    
+  }
+   .wrap {
+    /* width: 90%;
+     margin:  auto;*/
+     background-color: #fff;
+   }
+  
+   .desaturated-blue {
+    color:  hsl(224, 23%, 55%); /* Desaturated blue*/
+  }
+  
+  .dark-blue {
+    color:hsl(223, 47%, 23%) ; /*Dark blue*/
+  }
+  
+  /*illustration Styling section*/
+  
+  .cover {
+    width: 100%;
+  }
+  
+  /* Order Summary  */
+  
+  .main {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+ /* . summary {
+    padding: 0 20px;
+  }*/
+  
+  /* Plan Summary*/
+  
+  .plan {
+    background-color:hsl(225, 100%, 98%) ; /*very Pale Blue*/
+   padding: 10px 5px;
+   margin: 30px 10px;
+   border-radius: 10px;
+   overflow: auto;   /* This solves the distorted flow cause by the list float property*/
+  }
+  
+  h4 {
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style-type: none;
+    display: inline-block;
+    padding:10px 15px;
+    /* float: left; */
+  }
+  
+  .change-plan  {
+    float: right;
+  }
+  
+  .change-plan a:hover {
+    color: hsl(273, 97%, 37%);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  
+  /****** Payment Button ******/
+  
+  .button {
+    clear: both;
+    background-color: hsl(245, 75%, 52%) ;
+    margin: 0 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 20px 5px hsl(225, 100%, 94%);
+  }
+  
+  .button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    font-weight: 900;
+    transition: all .5s;
+  }
+
+  .button:hover {
+      background-color: hsl(273, 97%, 37%);
+  }
+  
+  .cancel-button a {
+    font-weight: 900;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .5s;
+  }
+
+  .cancel-button a:hover {
+      color: hsl(223, 47%, 23%);
+  }
+  
+  /* Footer Details*/
+  
+  .attribution { 
+    padding: 20px;
+    font-size: 11px; 
+    text-align: center; 
+      
+  }
+    
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+      
+   }
+   
+   @media  (min-width:660px) {
+     body {
+       background-image: url('images/pattern-background-desktop.svg');
+       background-color: hsl(225, 100%, 94%); /*pale Blue */
+       background-position: top;
+       background-repeat: no-repeat;
+       background-size: contain; 
+       /*width: 100%;*/
+     }
+     
+     .wrap {
+       max-width: 480px ;
+       margin: 100px auto;
+       border-radius: 20px;
+     }
+     .cover {
+       border-radius: 20px 20px 0 0;
+     }
+   }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="banner">
+    <img src="images/illustration-hero.svg" alt="An hero illustration listening to music" class="cover"/>
+  </div>
+  <div class="main">
+    <div class="summary">
+      <h1 class="dark-blue">Order Summary</h1>
+      <p class="desaturated-blue"> You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+    </div>
+     
+    <div class="plan">
+      <ul class="plan-items">
+        <li><img src="images/icon-music.svg" alt="" /></li>
+        <li> <h4 class="dark-blue bold"> Annual Plan</h4> 
+        <span class="desaturated-blue">$59.99/year</span></li>
+        <li class="change-plan"> <a href="#" >Change</a></li>
+      </ul>
+    </div>
+
+    <div class="button">
+      <a href="#">Proceed to Payment</a>
+    </div>
+    <div class="cancel-button">
+      <a href="#" class="desaturated-blue">Cancel Order</a>
+    </div>
+
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nelson Elaye</a>.
+    </div>
+  </div>
+  </div>
+  
+ 
+
+</body>
+</html>
